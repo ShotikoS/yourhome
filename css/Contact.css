@@ -1,0 +1,493 @@
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px gray;
+          box-shadow: inset 0 0 3px gray;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2196f3;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d74bb;
+}
+
+.HeaderSection__container {
+  width: 100%;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Logo {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 200px;
+}
+
+.LogoImage {
+  height: 45px;
+}
+
+.TextForLogo {
+  margin-left: 4px;
+  font-size: 18px;
+  display: none;
+  color: #080853;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: karla;
+}
+
+.navbar__container {
+  margin-right: 50px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar li {
+  padding: 0px 3px;
+  margin: 0px 15px;
+}
+
+.navbar li:last-child {
+  margin-right: 0px;
+}
+
+.navbar a {
+  color: #080853;
+}
+
+.navbar a:hover {
+  color: #ffbb00;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.bar {
+  position: absolute;
+  margin-left: calc(100% - 50px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  font-size: 30px;
+  color: #080853;
+  visibility: hidden;
+}
+
+.HeadBar__container {
+  width: 100%;
+  background-color: #240024;
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 60px;
+}
+
+.HeadBar__container:hover {
+  opacity: 0.9;
+}
+
+.HeadBar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.InputSearchText__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  margin-left: 50px;
+}
+
+.InputSearchText__container #InputSearchWord {
+  background-color: #ffbb00;
+  border: #ffbb00 1px solid;
+  padding-left: 20px;
+  font-size: 18px;
+  color: white;
+  border-top-left-radius: 20px;
+  width: calc(100% - 40px);
+  border-bottom-left-radius: 20px;
+  height: 40px;
+}
+
+.InputSearchText__container .startSearching {
+  background-color: #ffbb00;
+  border: #ffbb00 1px solid;
+  height: 40px;
+  font-size: 18px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  width: 40px;
+  cursor: pointer;
+}
+
+.AccessYourAccound__buttons {
+  margin-right: 50px;
+}
+
+.SingIn, .SignUp {
+  background-color: unset;
+  border: #ffbb00 2px solid;
+  height: 40px;
+  padding: 0px 40px;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.SingIn:hover, .SignUp:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.SignUp {
+  background-color: #ffbb00;
+  margin-right: 0px;
+}
+
+.bgModal, .registration__bgmodal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: none;
+  z-index: 100;
+}
+
+.registrationTitle {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.registration__popUp {
+  width: 90%;
+  z-index: 1000;
+  overflow: auto;
+  border-radius: 10px;
+  position: fixed;
+  background-color: white;
+  opacity: 0.99;
+  margin-left: 50%;
+  margin-top: 60px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 700px !important;
+  height: 530px;
+}
+
+.registration__popUp .ImgLogoInReg {
+  width: 50px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 30px;
+}
+
+.logo__OnReg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.registrationForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+.registrationForm ::-webkit-input-placeholder {
+  color: gray;
+}
+
+.registrationForm :-ms-input-placeholder {
+  color: gray;
+}
+
+.registrationForm ::-ms-input-placeholder {
+  color: gray;
+}
+
+.registrationForm ::placeholder {
+  color: gray;
+}
+
+.RegistrationFormStyle {
+  width: 250px;
+  margin-top: 20px;
+  outline: none;
+  border: #ffbb00 1px solid;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.SingIn__PopUp {
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
+  overflow: auto;
+  height: 460px;
+  border-radius: 10px;
+  position: fixed;
+  background-color: white;
+  opacity: 0.99;
+  margin-left: 50%;
+  margin-top: 60px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.close__SingIn, .close__SignUp {
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.FinishSignUp {
+  width: 200px !important;
+  margin-bottom: 40px;
+}
+
+.logo__OnSingIn, .logo__OnReg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35px;
+}
+
+.SingInBoxes {
+  width: 60%;
+  font-size: 18px;
+  padding: 5px 9px;
+  border: #240024 1px solid;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 25px;
+}
+
+.SingIn__PopUp__title {
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.PasswordRecovery {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.SingInBTN, .FinishSignUp {
+  width: 55%;
+  margin-top: 40px;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  border: #ffbb00 1px solid;
+  background-color: #ffbb00;
+}
+
+.website__logo {
+  width: 50px;
+}
+
+.Contact__Title {
+  margin-top: 90px;
+}
+
+.Content__Container {
+  width: 85%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.Contact__Title {
+  font-size: 27px;
+}
+
+.Contact__Description {
+  width: 50%;
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+.ContactMessage {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.MessageInputBoxes {
+  padding: 5px 10px;
+  height: 30px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #ffbb00;
+  font-size: 17px;
+  color: #525252;
+  width: 44%;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Message {
+  width: 48%;
+}
+
+.MapInContact {
+  width: 48%;
+  margin-top: 80px;
+  height: 328px;
+}
+
+#UserContactEmail {
+  width: 100% !important;
+  margin-top: 30px;
+}
+
+#UsersMessage {
+  width: 100%;
+  margin-top: 30px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #ffbb00;
+  font-size: 18px;
+  color: #525252;
+  width: 100%;
+}
+
+.SendMessage__Button {
+  margin-top: 30px;
+  border: 1px solid #ffbb00;
+  background-color: #ffbb00;
+  color: white;
+  font-size: 17px;
+  margin-bottom: 30px;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.SendMessage__Button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Footer__container {
+  background-image: url("../images/footerBack.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 280px;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--important meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Marketing Services">
+    <!--linked files-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/MainPage.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/4106aa3140.js" crossorigin="anonymous" SameSite="none"></script>
+    <title> YourHome</title>
+</head>
+<body>
+
+    <div class="bgModal">
+        <div class="SingIn__PopUp">
+            <i class="fas fa-times close__SingIn"></i>
+            <a href="index.html" class="logo__OnSingIn">
+                <img src="images/website__logo.webp" alt="logo" class="website__logo">
+                <p class="LogoTitle">YourHome.ge</p>
+            </a>
+            <p class="SingIn__PopUp__title">
+                Sing In
+            </p>
+            <form action="action.php" method="post" style="display: flex;  justify-content: center; margin-top: 20px; flex-wrap: wrap;">
+                <input type="email" required name="EmailAddress" id="EnterEmailAddress" placeholder="Enter Email Address" class="SingInBoxes">
+                <input type="password" required name="EnterPassword" id="EnterYourPassword" placeholder="Enter Password" class="SingInBoxes">
+                <p class="PasswordRecovery">
+                    Not remember? <a href="#">Recovery Password</a> <br> 
+                    or <br>
+                    <a href="#">Create account</a>
+                </p>
+                <button class="SingInBTN">Sing In</button>
+            </form>
+        </div>
+    </div>
+    <div class="registration__bgmodal">
+        <div class="registration__popUp">
+            <i class="fas fa-times close__SignUp"></i>
+            <a href="index.html" class="logo__OnReg">
+                <img src="images/website__logo.webp" alt="logo" class="website__logo">
+                <p class="LogoTitle">YourHome.ge</p>
+            </a>
+            <p class="registrationTitle">Registration</p>
+            <form action="action.php" class="registrationForm">
+                <input type="text" placeholder="Name..." name="UserName" id="InputRegistrationName" class="RegistrationFormStyle">
+                <input type="text" placeholder="Surname..." name="Surname" id="InputRegistrationSurname" class="RegistrationFormStyle">
+                <input type="email" placeholder="Email address..." name="UserEmailReg" id="RegistrationEmail" class="RegistrationFormStyle">
+                <input type="text" placeholder="Phone number..." name="regPhoneNumber" id="RegistrationPhoneNumber" class="RegistrationFormStyle">
+                <input type="password" placeholder="Enter password..." name="EnterRegPassword" id="EnterRegPassword" class="RegistrationFormStyle">
+                <input type="password" placeholder="Repeat password" name="RepeatePassword" id="RepeatePassword" class="RegistrationFormStyle">
+                <button class="FinishSignUp" type="submit">Registration</button>
+            </form>
+
+        </div>
+    </div>
+    
+    <header class="HeaderSection__container">
+        <i class="fas fa-bars bar"></i>
+        <div class="Logo">
+            <img src="images/website__logo.webp" alt="LogoImage" class="LogoImage">
+            <p class="TextForLogo">YourHome.Ge</p>
+        </div>
+        <nav class="navbar__container">
+            <ul class="navbar" id="navbar"></ul>
+        </nav>
+    </header>
+    <section class="HeadBar__container">
+        <div class="InputSearchText__container">
+            <input type="search" name="InputSearchWord" id="InputSearchWord" placeholder="Search...">
+            <button class="startSearching" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="AccessYourAccound__buttons">
+            <button class="SingIn AcButtons">Sing In</button>
+            <button class="SignUp AcButtons">Sign Up</button>
+        </div>
+    </section>
+    <section class="SearchingByDetails">    <!--form for searching details-->
+        <form action="action.php" method="POST" class="searchDetails">
+            <select name="dealType" id="DealType" class="SearchBox top"></select>
+            <select name="RealEstateType" id="RealEstateType" class="SearchBox top"></select>
+            <select name="City" id="City" class="SearchBox top"></select>
+            <br>
+            <input type="number" name="PriseFrom" id="PriceFrom" class="SearchBox priceBox top SBox" style="margin-top: 20px;" placeholder="Price from">
+            <input type="number" name="PriceBefore" id="PriceBefore" class="SearchBox priceBox top SBox" placeholder="Price before">
+            <br>
+            <input type="number" name="AreaFrom" id="AreaFrom" class="SearchBox priceBox top SBox" placeholder="Area from" style="margin-top: 20px;">
+            <input type="number" name="AreaBefore" id="AreaBefore" class="SearchBox priceBox top SBox" placeholder="Area before">
+            <input type="number" name="FlatFrom" id="FlatFrom" class="SearchBox priceBox top SBox" placeholder="Flats from">
+            <input type="number" name="FlatBefore" id="FlatBefore" class="SearchBox priceBox top SBox" placeholder="Flats before">
+            <br>
+            <div class="searchInDetailSearch">
+                <input type="search" name="searchwithkayword" id="searchwithkayword" class="SearchBox top" style="margin-top: 20px;" placeholder="Searching">
+                <button type="submit" class="searchDetailsButton top"><i class="fas fa-search DetailSearchIcon"></i></button>
+            </div>
+        </form>
+    </section>
+    <section class="SVIP__Container">
+        <p class="SvipTitle">SVIP</p>
+        <div class="SVIP__Wrapper" id="te">
+            <div class="prevnextBtn">
+                <button id="PrevSvip"><i class="fas fa-chevron-left"></i></button>
+                <button id="NextSvip"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <ul class="SVIP__Carousel" id="SvipCarousel"></ul>
+        </div>
+    </section>
+    <section class="standardAds__Container">
+        <h3 class="title">Standard Ads</h3>
+        <ul class="StandardAds" id="StandardAds"></ul>
+    </section>
+    <section class="popularCities__container">
+        <h3 class="PopCity__title">Popular cities</h3>
+        <div class="popCityWrapper__container">
+            <button class="PrevCity"><i class="fas fa-chevron-left"></i></button>
+            <button class="NextCity"><i class="fas fa-chevron-right"></i></button>
+            <ul class="popcity__wrapper" id="popcity__wrapper">
+            </ul>
+        </div>
+    </section>
+
+    <section class="Photoservice__container">
+        <img src="images/PhotoService.jpg" alt="photoservice" class="PhotoserviceImage">
+        <div class="PhotoserviceText">
+            <p class="PhotoServ__title">Use our Photo Service</p>
+            <p class="Photoserv__text">
+                With our photo service you can make your real estate more marketable because 
+                the right angle image will attract more customers.
+            </p>
+        </div>
+    </section>
+
+    <footer class="Footer__container">
+        <p class="FooterContent">
+            Footer content
+        </p>
+    </footer>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+        crossorigin="anonymous">
+    </script>
+
+
+    <script src="js/MainPage.js"></script>
+
+</body>
+</html>
