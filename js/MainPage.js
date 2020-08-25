@@ -298,7 +298,7 @@ $(document).ready(function(){
         let width = $(".SVIP__Container").width();
         let ulWidth = parseInt($(".SVIP__Carousel").width());
         let marginL = $(".SVIP__Carousel").css("marginLeft");
-        let result = (SVIP__CarouselulWidth - parseInt(width)) * -1;
+        let result = (ulWidth - parseInt(width)) * -1;
         if(parseInt(marginL) > result){
             $(".SVIP__Carousel").css({
                 'margin-left': '-=260px',
